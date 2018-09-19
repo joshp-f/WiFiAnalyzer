@@ -203,6 +203,9 @@ class ExportItem implements NavigationItem {
 class MyWorker extends Worker {
     @Override
     public Worker.Result doWork() {
+        //MainContext.INSTANCE.getScannerService().update();
+        MainContext.INSTANCE.getScannerService().pause();
+        MainContext.INSTANCE.getScannerService().resume();
         final String TIME_STAMP_FORMAT = "yyyy/MM/dd HH:mm:ss";
         List<WiFiDetail> wiFiDetails = MainContext.INSTANCE.getScannerService().getWiFiData().getWiFiDetails();
         String timestamp = new SimpleDateFormat(TIME_STAMP_FORMAT).format(new Date());
