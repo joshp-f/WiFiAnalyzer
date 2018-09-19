@@ -100,6 +100,7 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3:3.8'
     implementation 'org.apache.commons:commons-collections4:4.2'
     implementation 'com.jjoe64:graphview:4.2.2'
+    implementation "android.arch.work:work-runtime:1.0.0-alpha08"
     // Unit Test Dependencies
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.powermock:powermock-module-junit4:1.7.4'
@@ -111,6 +112,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
+
 }
 
 updateVersion()
